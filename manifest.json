@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Phishing Blocker",
+    "version": "4.0.0",
+    "description": "Block phishing and vulnerable sites from loading in Google Chrome",
+    "permissions": [
+      "webRequest",
+      "webRequestBlocking",
+      "tabs",
+      "activeTab",
+      "<all_urls>"
+    ],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": true
+    },
+    "icons": {
+      "16": "icon-16.png",
+      "48": "icon-48.png",
+      "128": "icon-128.png"
+    },
+    "browser_action": {
+      "default_icon": "icon-48.png",
+      "default_title": "Phishing Blocker",
+      "default_popup": "popup.html"
+    }
+  }
+  
